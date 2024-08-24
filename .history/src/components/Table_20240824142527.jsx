@@ -1,9 +1,9 @@
 
 let active = (operational) => {
-  if (operational == true) {
+  if (operational === true) {
     return "Active"
   }
-  if (operational == false) {
+  if (operational === false) {
     return "Inactive"
   }
 }
@@ -30,10 +30,11 @@ const Table = ({ sat }) => {
           <td>{data.launchDate}</td>
           <td>{active(data.operational)}</td>
         </tr>
-    ))}
+      )
+    )};
      </tbody>
    </table>
-  )
+  );
 };
 
 export default Table;

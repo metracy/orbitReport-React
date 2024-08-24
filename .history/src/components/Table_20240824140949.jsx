@@ -20,20 +20,22 @@ const Table = ({ sat }) => {
      </tr>
      </thead>
      <tbody>
-    
-    {sat.map((data) => (
       
-        // switch to arrow function / fixed the .map wrong order for data and index // removed return with .map
-        <tr key={data.id}>
+    {sat.map(function (id, data) {
+      return (
+        // switch to arrow function 
+        <tr key={id}>
           <td>{data.name}</td>
           <td>{data.type}</td>
           <td>{data.launchDate}</td>
           <td>{active(data.operational)}</td>
         </tr>
-    ))}
+      );
+    }
+    )}
      </tbody>
    </table>
-  )
+  );
 };
 
 export default Table;

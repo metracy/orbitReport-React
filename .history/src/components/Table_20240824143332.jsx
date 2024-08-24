@@ -21,7 +21,7 @@ const Table = ({ sat }) => {
      </thead>
      <tbody>
     
-    {sat.map((data) => (
+    {sat.map((data) => {
       
         // switch to arrow function / fixed the .map wrong order for data and index // removed return with .map
         <tr key={data.id}>
@@ -30,7 +30,8 @@ const Table = ({ sat }) => {
           <td>{data.launchDate}</td>
           <td>{active(data.operational)}</td>
         </tr>
-    ))}
+    }
+    )};
      </tbody>
    </table>
   )

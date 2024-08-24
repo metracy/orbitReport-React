@@ -30,7 +30,8 @@ const Table = ({ sat }) => {
           <td>{data.launchDate}</td>
           <td>{active(data.operational)}</td>
         </tr>
-    ))}
+    )
+    )};
      </tbody>
    </table>
   )
