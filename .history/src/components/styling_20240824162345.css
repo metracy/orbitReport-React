@@ -28,6 +28,9 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
+body {
+  background-image: "../images/banner.jpg";
+}
 
 .overlay {
   background: rgba(90,150,206, 0.4);
