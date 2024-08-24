@@ -22,11 +22,7 @@ function App() {
   return (
     <div>
       <Banner />
-      <Buttons
-      filterByType={filterByType}
-      setSat={setSat}
-      displaySats={displaySats}
-      />
+      <Buttons />
       <Table />
     </div>
   );
