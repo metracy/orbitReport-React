@@ -25,7 +25,6 @@ function App() {
       filterByType={filterByType}
       setSat={setSat}
       displaySats={displaySats}
-      satData={satData}
       />
       {/* Incorrect table  component fixed! */}
       <Table sat={sat}/>

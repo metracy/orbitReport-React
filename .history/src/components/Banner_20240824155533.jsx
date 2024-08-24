@@ -1,3 +1,4 @@
+import styling from "./syling.css";
 function Banner() {
     return(
         <header>

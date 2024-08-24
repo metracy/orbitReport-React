@@ -1,4 +1,6 @@
-const Buttons = ({ filterByType, setSat, displaySats, satData}) => {
+import satData from "./satData";
+
+const Buttons = ({ filterByType, setSat, displaySats}) => {
   return (
     <div>
       {/* Provide two callbacks for the map function: id and sat. */ }
@@ -9,10 +11,9 @@ const Buttons = ({ filterByType, setSat, displaySats, satData}) => {
     </button>
     );
   })}
-  {/* Incorrectly called setSat */}
-    <button onClick={() => setSat(satData)}>
-      All Orbits
-    </button>
+      <button onClick={() => setSat={satData}}>
+        All Orbits
+      </button>
     </div>
   )
 };

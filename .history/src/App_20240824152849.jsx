@@ -1,6 +1,7 @@
 import Buttons from "./components/Buttons";
 import Table from "./components/Table";
 import Banner from "./components/Banner";
+// not importing correctly?
 import satData from "./components/satData";
 
 import React from "react";
@@ -25,7 +26,6 @@ function App() {
       filterByType={filterByType}
       setSat={setSat}
       displaySats={displaySats}
-      satData={satData}
       />
       {/* Incorrect table  component fixed! */}
       <Table sat={sat}/>

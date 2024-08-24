@@ -1,4 +1,4 @@
-const Buttons = ({ filterByType, setSat, displaySats, satData}) => {
+const Buttons = ({ filterByType, setSat, displaySats }) => {
   return (
     <div>
       {/* Provide two callbacks for the map function: id and sat. */ }
@@ -9,12 +9,11 @@ const Buttons = ({ filterByType, setSat, displaySats, satData}) => {
     </button>
     );
   })}
-  {/* Incorrectly called setSat */}
-    <button onClick={() => setSat(satData)}>
-      All Orbits
-    </button>
+      <button onClick={() => sat={sat}}>
+        All Orbits
+      </button>
     </div>
-  )
+  );
 };
 
 export default Buttons;

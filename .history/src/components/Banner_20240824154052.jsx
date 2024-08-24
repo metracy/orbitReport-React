@@ -1,3 +1,5 @@
+import "./components/Banner.css";
+
 function Banner() {
     return(
         <header>
