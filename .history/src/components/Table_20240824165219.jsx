@@ -21,7 +21,7 @@ const Table = ({ sat }) => {
      </tr>
      </thead>
      <tbody>
-    {/* map function takes in data, then provide index. This way is cleaner then before */}
+    
     {sat.map((data, id) => (
         <tr key={id}>
           <td>{data.name}</td>
