@@ -1,13 +1,4 @@
 
-let active = (operational) => {
-  if (operational == 1) {
-    return "Active"
-  }
-  if (operational == 0) {
-    return "Inactive"
-  }
-}
-
 const Table = ({ sat }) => {
   return (
     <table>
@@ -21,16 +12,10 @@ const Table = ({ sat }) => {
      </tr>
      </thead>
      <tbody>
-      {/* The map function will return data to each row in the table.
-The <tr> tag in the table body needs a key. Set the key equal to the id.
-Create a total of four <td> tags.
-Use dot notation to assign the correct object key. The code below would render the name of a satellite. */}
-    
      <tr key = {id}>
      <td>{data.name}</td>
-     <td>{data.type}</td>
      <td>{data.name}</td>
-     <td>{active(data.operational)}</td>
+     <td>{data.name}</td>
      
      </tr>
      </tbody>

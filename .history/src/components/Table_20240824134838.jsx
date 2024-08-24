@@ -25,10 +25,10 @@ const Table = ({ sat }) => {
 The <tr> tag in the table body needs a key. Set the key equal to the id.
 Create a total of four <td> tags.
 Use dot notation to assign the correct object key. The code below would render the name of a satellite. */}
-    
+
      <tr key = {id}>
      <td>{data.name}</td>
-     <td>{data.type}</td>
+     <td>{data.name}</td>
      <td>{data.name}</td>
      <td>{active(data.operational)}</td>
      
