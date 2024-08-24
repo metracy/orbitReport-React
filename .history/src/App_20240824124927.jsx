@@ -1,12 +1,9 @@
 import Buttons from "./components/Buttons";
 import Table from "./components/Table";
 import Banner from "./components/Banner";
-// not importing correctly?
+import {useState} from "react";
+import React from "react"
 import satData from "./components/satData";
-
-import React from "react";
-import { useState } from "react";
-
 
 
 function App() {
