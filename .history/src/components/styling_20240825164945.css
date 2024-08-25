@@ -17,10 +17,6 @@ button {
   font-weight: bold;
 }
 
-button:hover {
-  transition-duration: .3s;
-  background-color: #374655ab;
-}
 .flex-container {
   display: flex;
   justify-content: center;

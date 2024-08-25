@@ -18,8 +18,8 @@ button {
 }
 
 button:hover {
-  transition-duration: .3s;
-  background-color: #374655ab;
+  transition-duration: 0.4s;
+  background-color: #354a5f5d;
 }
 .flex-container {
   display: flex;
