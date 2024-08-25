@@ -21,9 +21,9 @@ const Table = ({ sat }) => {
      </tr>
      </thead>
      <tbody>
-    {/* map function takes in array data, then provide index. This way is cleaner than before render time down to 275 ms --> actually they are apparently they are the same*/}
-    {sat.map((data, id) => (
-        <tr key={id}>
+    {/* map function takes in array data, then provide index. This way is cleaner than before render time down to 275 ms*/}
+    {sat.map((data) => (
+        <tr key={data.id}>
           <td>{data.name}</td>
           <td>{data.type}</td>
           <td>{data.launchDate}</td>
