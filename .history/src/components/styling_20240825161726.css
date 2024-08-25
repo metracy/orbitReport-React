@@ -52,10 +52,9 @@ td {
 }
 
 h1 {
-  padding: 50px;
-  background-image: url("../images/banner.jpg");
+  padding: 0px;
   text-align: center;
-  /* background: #5c94ce; removed for prettiness*/
+  background: #5c94ce;
   color: white;
   font-size: 60px;
 }
