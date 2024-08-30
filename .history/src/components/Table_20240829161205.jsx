@@ -1,6 +1,13 @@
 import "./styling.css";
 
-
+let active = (operational) => {
+  if (operational == true) {
+    return "Active"
+  }
+  if (operational == false) {
+    return "Inactive"
+  }
+}
 
 const Table = ({ sat }) => {
 

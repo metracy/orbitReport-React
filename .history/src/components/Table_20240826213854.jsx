@@ -1,6 +1,13 @@
 import "./styling.css";
 
-
+let active = (operational) => {
+  if (operational == true) {
+    return "Active"
+  }
+  if (operational == false) {
+    return "Inactive"
+  }
+}
 
 const Table = ({ sat }) => {
 
@@ -21,7 +28,7 @@ const Table = ({ sat }) => {
           <td>{data.name}</td>
           <td>{data.type}</td>
           <td>{data.launchDate}</td>
-          <td>{data.operational ? 'Active' : 'Inactive'}</td>
+          <td>{active(data.operational)}</td>
         </tr>
     ))}
      </tbody>
